@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador / Desencriptador de Texto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./reset.css>">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="./index.js"></script>
+</head>
+<body>
+    <header>
+        <img class="logo" src="./images/Logo.png">
+    </header>
+    <main class="contenido">
+        <section class="entrada">
+            <textarea class="texto-entrada" id="textoIngresado" placeholder="Ingrese el texto aqui" rows="10" cols="40"></textarea>
+            <p class="aclaracion">Solo letras minúsculas y sin acentos</p>
+            <div class="botones">
+                <button class="boton-encriptar" onclick="encriptar()">Encriptar</button>
+                <button class="boton-desencriptar" onclick="desencriptar()">Desencriptar</button>
+            </div>
+        </section>
+        <section class="no-texto" id="panelsintexto">
+            <img id="munieco" src="./images/muñeco.png">
+            <p id="no-mensaje">Ningún mensaje fue encontrado</p>
+            <p id="indicacion">Ingresa el texto que desees encriptar o desencriptar.</p>
+        </section>
+        <section class="salida" id="panelsalidaok">
+            <textarea id="texto-salida" readonly="readonly"></textarea>
+            <button id="boton-copiar" onclick="copiar()">Copiar</button>
+        </section>
+        <section class="salida-error" id="panelsalidaerror">
+            <img id="alerta" src="images/exclamation-circle-fill-svgrepo-com-blue.png">
+            <br>
+            <p id="advertencia">Sólo puedes ingresar textos en letra minúscula y sin acentos.</p>
+            <p id="otravez">Inténtalo nuevamente.</p>
+        </section>
+    </main> 
+    <footer class="pie">
+        <p>&copy; Emilia Poletti - 2023</p>
+    </footer>
+</body>
+</html>
