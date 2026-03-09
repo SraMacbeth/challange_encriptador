@@ -33,7 +33,7 @@ El algoritmo funciona reemplazando las vocales por las siguientes "llaves":
 
 1.  Clona este repositorio:
     ```bash
-    git clone [https://github.com/tu-usuario/challange_encriptador.git](https://github.com/tu-usuario/challange_encriptador.git)
+    git clone https://github.com/SraMacbeth/challange_encriptador.git
     ```
 2.  Navega a la carpeta del proyecto y abre el archivo `index.html` en tu navegador.
 3.  Ingresa el texto que desees encriptar (asegúrate de que esté en minúsculas y sin acentos).
